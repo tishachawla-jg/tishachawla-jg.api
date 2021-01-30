@@ -1,9 +1,9 @@
 const express = require('express');
  const app = express(); 
-app.get('/', (req, res) => {
+app.post('/', (req, res) => {
      return res.sendFile(__dirname+'/index.html');
     })
-app.post('/getsquareof',(req,res)=>
+app.post('/square',(req,res)
 {
     const n=parseInt(req.query.n);
     const sq=n*n;
